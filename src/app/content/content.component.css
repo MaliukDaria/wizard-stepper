@@ -1,0 +1,14 @@
+.body {
+    align-items: center;
+    text-align: center;
+}
+
+.text {
+    font-size: 15px;
+    color: gray;
+}
+
+.big_text {
+    font-size: 35px;
+    color: gray;
+}

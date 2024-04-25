@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="horizontal-line"></div>
+  <div class="row button-container">
+    <ng-container *ngFor="let step of steps; let last = last">
+        <button (click)="onStepClick(step)"
+                [class.active-btn-style]="step == (currentStep$ | async)"
+                class="circle btn btn-outline-info"
+        >{{step.text}}</button>
+      <div *ngIf="!last" class="horizontal-line"></div>
+    </ng-container>
+  </div>
+  <div class="horizontal-line"></div>
+</div>

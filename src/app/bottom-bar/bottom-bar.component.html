@@ -1,0 +1,24 @@
+<div class="body">
+  <div class="col">
+    <button
+        *ngIf="!(isFirst() | async)"
+        type="button"
+        class="button btn btn-outline-light"
+        (click)="previousStep()">
+      Back
+    </button>
+    <button
+        *ngIf="!(isLast() | async)"
+        type="button"
+        class="button btn btn-outline-light"
+        (click)="nextStep()">
+      Next
+    </button>
+    <button
+        *ngIf="(isLast() | async)"
+        type="button"
+        class="button btn btn-outline-light">
+      Finish
+    </button>
+  </div>
+</div>
